@@ -1,0 +1,329 @@
+/* =====================================================================
+   LUX INTERIORES · cocinas-integrales.html
+   Sección SEO + beneficios + zonas + FAQ + CTA
+   Estilo alineado a styles.css / nuevos-estilos.css:
+   Georgia (títulos) + Arial (texto), crema #f6f1e9, dorado #947044,
+   oscuro #211c17, tarjetas con borde dorado superior y esquinas de 6px.
+   Enlázalo DESPUÉS de movil.css.
+   ===================================================================== */
+
+.lxs {
+  --lxs-gold: #947044;
+  --lxs-gold-light: #c9a574;
+  --lxs-cream: #f6f1e9;
+  --lxs-dark: #211c17;
+  --lxs-line: #e6dccd;
+  --lxs-text: #5d5247;
+  --lxs-green: #25d366;
+
+  padding: 90px 0;
+  background: #fff;
+  color: var(--lxs-text);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.lxs *, .lxs *::before, .lxs *::after { box-sizing: border-box; }
+
+.lxs-wrap {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+/* ---------- Tipografía (igual que el resto del sitio) ---------- */
+.lxs h2 {
+  font: 400 clamp(30px, 3.8vw, 44px)/1.12 Georgia, serif;
+  color: var(--lxs-dark);
+  margin: 0 0 18px;
+}
+.lxs h3 {
+  font: 700 21px/1.3 Georgia, serif;
+  color: var(--lxs-dark);
+  margin: 0 0 10px;
+}
+.lxs p { margin: 0 0 16px; color: var(--lxs-text); }
+.lxs p:last-child { margin-bottom: 0; }
+
+.lxs-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--lxs-gold);
+}
+.lxs-eyebrow--light { color: var(--lxs-gold-light); }
+
+.lxs-head { max-width: 720px; margin: 0 0 40px; }
+
+/* ---------- 1 · Intro + materiales (fondo blanco) ---------- */
+.lxs-intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.lxs-lead {
+  font-size: 18px;
+  color: var(--lxs-dark) !important;
+  line-height: 1.65;
+}
+.lxs-intro-copy p { max-width: 60ch; }
+
+.lxs-materials { display: grid; gap: 18px; }
+.lxs-mat-card {
+  background: var(--lxs-cream);
+  border-top: 3px solid var(--lxs-gold);
+  border-radius: 6px;
+  padding: 28px;
+}
+.lxs-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+}
+.lxs-tags li {
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--lxs-line);
+  color: var(--lxs-gold);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ---------- 2 · Beneficios (fondo crema) ---------- */
+.lxs-benefits { background: var(--lxs-cream); }
+
+.lxs-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.lxs-card {
+  background: #fff;
+  border-top: 3px solid var(--lxs-gold);
+  border-radius: 6px;
+  padding: 30px 28px 32px;
+  box-shadow: 0 8px 24px rgba(60, 40, 15, .08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.lxs-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(60, 40, 15, .14);
+}
+.lxs-card p { font-size: 15px; line-height: 1.6; }
+
+.lxs-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: var(--lxs-cream);
+  color: var(--lxs-gold);
+}
+.lxs-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- 3 · Zonas (fondo blanco) ---------- */
+.lxs-zones { padding: 70px 0; }
+.lxs-zones-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 44px;
+  background: var(--lxs-cream);
+  border: 1px solid var(--lxs-line);
+  border-left: 3px solid var(--lxs-gold);
+  border-radius: 6px;
+}
+.lxs-zones-copy h2 { margin-bottom: 12px; }
+
+.lxs-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.lxs-chips li {
+  padding: 9px 18px;
+  border: 1px solid var(--lxs-gold);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--lxs-gold);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* ---------- 4 · FAQ (fondo crema) ---------- */
+.lxs-faq-sec { background: var(--lxs-cream); }
+.lxs-faq-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 56px;
+  align-items: start;
+}
+.lxs-faq-head { position: sticky; top: 110px; }
+
+.lxs-faq details {
+  margin-bottom: 12px;
+  background: #fff;
+  border: 1px solid var(--lxs-line);
+  border-left: 3px solid var(--lxs-line);
+  border-radius: 6px;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+.lxs-faq details[open] {
+  border-left-color: var(--lxs-gold);
+  box-shadow: 0 8px 24px rgba(60, 40, 15, .08);
+}
+.lxs-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 62px;
+  padding: 18px 24px;
+  cursor: pointer;
+  list-style: none;
+}
+.lxs-faq summary::-webkit-details-marker { display: none; }
+.lxs-faq summary h3 { margin: 0; font-size: 18px; }
+.lxs-faq summary::after {
+  content: "";
+  flex: none;
+  width: 14px;
+  height: 14px;
+  color: var(--lxs-gold);
+  background:
+    linear-gradient(currentColor, currentColor) center / 100% 2px no-repeat,
+    linear-gradient(currentColor, currentColor) center / 2px 100% no-repeat;
+  transition: transform .3s ease;
+}
+.lxs-faq details[open] summary::after { transform: rotate(45deg); }
+.lxs-faq-a p { padding: 0 24px 22px; margin: 0; }
+
+/* ---------- 5 · CTA (franja oscura, como el hero y la franja de confianza) ---------- */
+.lxs-cta {
+  padding: 90px 0;
+  background:
+    radial-gradient(circle at 85% 20%, #d8bd8c30, transparent 30%),
+    var(--lxs-dark);
+  color: #fff;
+}
+.lxs-cta-card { max-width: 780px; margin: 0 auto; text-align: center; }
+.lxs-cta h2 { color: #fff; }
+.lxs-cta-copy { color: #e6dccd !important; font-size: 17px; margin-bottom: 26px !important; }
+
+.lxs-cta-points {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 26px;
+  margin: 0 0 32px;
+  padding: 0;
+  color: #fff;
+  font-size: 15px;
+}
+.lxs-cta-points li { display: inline-flex; align-items: center; gap: 8px; }
+.lxs-cta-points li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4.5 8.5l2.3 2.3 4.7-5' fill='none' stroke='%23211c17' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat,
+    var(--lxs-gold-light);
+}
+
+/* Mismo verde y peso que el botón flotante del sitio */
+.lxs-btn-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 16px 36px;
+  border-radius: 999px;
+  background: var(--lxs-green);
+  color: #073c1d;
+  font-size: 17px;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .35);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.lxs-btn-wa:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(0, 0, 0, .45); }
+
+.lxs-cta-or { margin: 30px 0 14px !important; color: #bdb5a9 !important; font-size: 14px; }
+.lxs-cta-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.lxs-cta-chips a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 22px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 14px;
+  transition: background .2s, color .2s;
+}
+.lxs-cta-chips a:hover { background: #fff; color: var(--lxs-dark); }
+.lxs-cta-note { margin-top: 26px !important; font-size: 13px; color: #9d9487 !important; }
+
+/* ---------- Accesibilidad ---------- */
+.lxs a:focus-visible,
+.lxs summary:focus-visible { outline: 2px solid var(--lxs-gold); outline-offset: 3px; }
+.lxs-cta a:focus-visible { outline-color: #fff; }
+
+/* ---------- Entrada suave (solo con JS) ---------- */
+.lxs-js .lxs-reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.lxs-js .lxs-reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lxs *, .lxs *::before, .lxs *::after { transition: none !important; animation: none !important; }
+  .lxs-js .lxs-reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .lxs { padding: 70px 0; }
+  .lxs-intro-grid,
+  .lxs-zones-card,
+  .lxs-faq-grid { grid-template-columns: 1fr; gap: 32px; }
+  .lxs-cards { grid-template-columns: repeat(2, 1fr); }
+  .lxs-faq-head { position: static; }
+  .lxs-zones-card { padding: 32px; }
+}
+
+@media (max-width: 560px) {
+  .lxs { padding: 58px 0; }
+  .lxs-cards { grid-template-columns: 1fr; }
+  .lxs-zones-card { padding: 26px 22px; }
+  .lxs-faq summary { padding: 16px 18px; }
+  .lxs-faq-a p { padding: 0 18px 20px; }
+  .lxs-btn-wa { width: 100%; padding-inline: 20px; }
+  .lxs-cta-chips a { flex: 1 1 calc(50% - 10px); justify-content: center; }
+}
